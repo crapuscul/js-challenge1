@@ -60,42 +60,33 @@ p {
   text-align: center;
   border-radius: .3em;
   display: flex;
-  justify-content: space-around;
-  /* background-color: #673d3d; */
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
 
 }
 
 .rb-tab {
-  position: relative;
-  width: 20%;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .rb-txt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 15px;
   color: #FFFFFF;
   font-weight: 400;
 }
 
 .rb-spot {
-  position: absolute;
+  display: flex;
   width: 36px;
   height: 36px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: transparent;
   background: #272e38;
   border-radius: 100%;
   cursor: pointer;
   transition: ease .5s;
-  /* flex-shrink: 1; */
+  align-items: center;
+  justify-content: center;
 }
 .rb-tab-active .rb-spot{
   background:hsl(0, 0%, 100%) ;
